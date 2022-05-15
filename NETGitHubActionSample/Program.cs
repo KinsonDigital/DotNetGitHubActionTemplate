@@ -13,7 +13,8 @@ static async Task RunActionAsync(ActionInputs inputs, IHost host)
 {
     // https://docs.github.com/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
     Console.WriteLine("This is a sample GitHub action in .NET!!");
-    Console.WriteLine($"::set-output message=message::{inputs.Message}");
+    Console.WriteLine($"This is the message: {inputs.Message}");
+    Console.WriteLine($"::set-output name=my-output::sample-output");
 
 #if DEBUG
     Console.ReadLine();
