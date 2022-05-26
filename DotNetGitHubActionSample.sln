@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETGitHubActionSample", "NETGitHubActionSample\NETGitHubActionSample.csproj", "{6B7D8AB5-2EB6-4B9E-A219-44BAA2016BED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetGitHubActionSample", "DotNetGitHubActionSample\DotNetGitHubActionSample.csproj", "{6B7D8AB5-2EB6-4B9E-A219-44BAA2016BED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F6905A4-928D-4A81-9D9B-B273A27B3A92}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,11 +13,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Dockerfile = Dockerfile
 		LICENSE = LICENSE
 		README.md = README.md
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETGithubActionSampleTests", "Testing\NETGithubActionSampleTests\NETGithubActionSampleTests.csproj", "{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetGitHubActionSampleTests", "Testing\DotNetGitHubActionSampleTests\DotNetGitHubActionSampleTests.csproj", "{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{3FB14118-6942-463A-9E6E-58EE7968075E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Issue Templates", "Issue Templates", "{330C0AE1-8934-470D-9652-F19BD167741A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug-issue-template.yml = .github\ISSUE_TEMPLATE\bug-issue-template.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pull Request Templates", "Pull Request Templates", "{4A3DC25C-B4CE-4BE5-B3D7-D01AD6F7DB34}"
+	ProjectSection(SolutionItems) = preProject
+		.github\PULL_REQUEST_TEMPLATE\feature-pr-template.md = .github\PULL_REQUEST_TEMPLATE\feature-pr-template.md
+		.github\PULL_REQUEST_TEMPLATE\preview-feature-pr-template.md = .github\PULL_REQUEST_TEMPLATE\preview-feature-pr-template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{E85C3CA0-3C6C-435B-8CE4-86D6B1D1931E}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-status-check.yml = .github\workflows\build-status-check.yml
+		.github\workflows\unit-tests-status-check.yml = .github\workflows\unit-tests-status-check.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +60,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807} = {3FB14118-6942-463A-9E6E-58EE7968075E}
+		{330C0AE1-8934-470D-9652-F19BD167741A} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
+		{4A3DC25C-B4CE-4BE5-B3D7-D01AD6F7DB34} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
+		{E85C3CA0-3C6C-435B-8CE4-86D6B1D1931E} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
 	EndGlobalSection
 EndGlobal

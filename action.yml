@@ -1,23 +1,22 @@
 name: '.NET Github Action Sample' # TODO: Set the name
 description: 'An example NET Github action.' # TODO: Set the description
+author: 'Calvin Wilkinson (KinsonDigital)'
 branding:
-  icon: sliders
+  icon: settings
   color: purple
-inputs:
+inputs: # TODO: Add as many inputs as needed
   message:
-    description: 'The message to print to the console.'
+    description: 'Prints a message to the console.'
     required: true
-# TODO: Add as many inputs as needed
 
-# TODO: Re-enable if you want to have action outputs
-#outputs:
-#  sample-output: # This is the name of the output
-#    description: 'Sample output.'
+outputs: # TODO: Re-enable if you want to have action outputs
+  sample-output: # This is the name of the output
+    description: 'Sample output.'
 
-# These are the arguments to pass into the console app
+# These are the arguments that are passed into the console app
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-  - '-m'
+  - '--message'
   - ${{ inputs.message }}

@@ -6,12 +6,12 @@ COPY . ./
 RUN dotnet publish ./NETGitHubActionSample/NETGitHubActionSample.csproj -c Release -o out --no-self-contained
 
 # Label the container
-LABEL maintainer="David Pine <david.pine@microsoft.com>"
-LABEL repository="https://github.com/dotnet/samples"
-LABEL homepage="https://github.com/dotnet/samples"
+LABEL maintainer="Calvin Wilkinson <kinsondigital@gmail.com>"
+LABEL repository="https://github.com/KinsonDigital/NETGitHubActionSample"
+LABEL homepage="https://github.com/KinsonDigital/NETGitHubActionSample"
 
 # Label as GitHub action
-LABEL com.github.actions.name=".NET GitHub Action Sample"
+LABEL com.github.actions.name="NET GitHub Action Sample"
 
 # Relayer the .NET SDK, anew with the build output
 FROM mcr.microsoft.com/dotnet/sdk:6.0
