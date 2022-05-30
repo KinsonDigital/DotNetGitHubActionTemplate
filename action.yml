@@ -1,4 +1,4 @@
-name: '.NET Github Action Sample' # TODO: Set the name
+name: '.NET Github Action Template' # TODO: Set the name
 description: 'An example NET Github action.' # TODO: Set the description
 author: 'Calvin Wilkinson (KinsonDigital)'
 branding:

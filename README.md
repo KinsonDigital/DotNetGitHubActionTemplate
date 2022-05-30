@@ -81,7 +81,7 @@ TODO: Show examples if required
 <div align="left">
 
 ### License
-- [MIT License - NETGitHubActionSample]()
+- [MIT License - DotNetGitHubActionTemplate]()
 </div>
 
 <div align="left">
@@ -92,8 +92,8 @@ TODO: Show examples if required
 TODO: Update these links
 
 - [Calvin Wilkinson](https://github.com/CalvinWilkinson) (Owner and main contributor of the GitHub organization [KinsonDigital](https://github.com/KinsonDigital))
-  - [NET GitHub Action Sample](https://github.com/KinsonDigital/NETGitHubActionSample) is used in various projects for this organization with great success.
-- Click [here](https://github.com/KinsonDigital/NETGitHubActionSample/issues/new/choose) to report any issues for this GitHub action!!
+  - [NET GitHub Action Sample](https://github.com/KinsonDigital/DotNetGitHubActionTemplate) is used in various projects for this organization with great success.
+- Click [here](https://github.com/KinsonDigital/DotNetGitHubActionTemplate/issues/new/choose) to report any issues for this GitHub action!!
 
 <div align="right">
 <a href="#what-is-it">Back to the top!👆🏼</a>

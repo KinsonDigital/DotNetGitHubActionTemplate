@@ -6,11 +6,11 @@
     <LangVersion>10.0</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>DotNetGitHubActionSample</RootNamespace>
-      
+    <RootNamespace>DotNetGitHubActionTemplate</RootNamespace>
+
     <!--Update this for production and preview releases-->
     <Version>1.0.0-preview.9</Version>
-    
+
     <!--Update this for production and preview releases-->
     <FileVersion>1.0.0-preview.9</FileVersion>
   </PropertyGroup>

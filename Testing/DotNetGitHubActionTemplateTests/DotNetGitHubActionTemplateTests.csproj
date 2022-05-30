@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>DotNetGitHubActionSampleTests</RootNamespace>
+        <RootNamespace>DotNetGitHubActionTemplateTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -47,7 +47,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\DotNetGitHubActionSample\DotNetGitHubActionSample.csproj" />
+      <ProjectReference Include="..\..\DotNetGitHubActionTemplate\DotNetGitHubActionTemplate.csproj" />
     </ItemGroup>
 
 </Project>

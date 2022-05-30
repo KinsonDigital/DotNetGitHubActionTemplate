@@ -2,24 +2,24 @@
 // Copyright (c) KinsonDigital. All rights reserved.
 // </copyright>
 
-using DotNetGitHubActionSample;
-using DotNetGitHubActionSample.Services;
+using DotNetGitHubActionTemplate;
+using DotNetGitHubActionTemplate.Services;
 using Moq;
 
-namespace DotNetGitHubActionSampleTests;
+namespace DotNetGitHubActionTemplateTests;
 
 public class GitHubActionTests
 {
-    private readonly Mock<IGitHubConsoleService> _mockConsoleService;
-    private readonly Mock<IActionOutputService> _mockActionOutputService;
+    private readonly Mock<IGitHubConsoleService> mockConsoleService;
+    private readonly Mock<IActionOutputService> mockActionOutputService;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GitHubActionTests"/> class.
     /// </summary>
     public GitHubActionTests()
     {
-        _mockConsoleService = new Mock<IGitHubConsoleService>();
-        _mockActionOutputService = new Mock<IActionOutputService>();
+        this.mockConsoleService = new Mock<IGitHubConsoleService>();
+        this.mockActionOutputService = new Mock<IActionOutputService>();
     }
 
     #region Method Tests
@@ -39,5 +39,5 @@ public class GitHubActionTests
     /// </summary>
     /// <returns>The instance to test.</returns>
     private GitHubAction CreateAction()
-        => new (_mockConsoleService.Object, _mockActionOutputService.Object);
+        => new (this.mockConsoleService.Object, this.mockActionOutputService.Object);
 }

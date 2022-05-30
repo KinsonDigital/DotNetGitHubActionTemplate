@@ -4,25 +4,25 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace DotNetGitHubActionSample.Services;
+namespace DotNetGitHubActionTemplate.Services;
 
 /// <inheritdoc/>
 [ExcludeFromCodeCoverage]
 public class AppService : IAppService
 {
-    private readonly IGitHubConsoleService _gitHubConsoleService;
+    private readonly IGitHubConsoleService gitHubConsoleService;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="AppService"/> class.
     /// </summary>
     /// <param name="gitHubConsoleService">Writes to the console.</param>
-    public AppService(IGitHubConsoleService gitHubConsoleService) => _gitHubConsoleService = gitHubConsoleService;
+    public AppService(IGitHubConsoleService gitHubConsoleService) => this.gitHubConsoleService = gitHubConsoleService;
 
     /// <inheritdoc/>
     public void Exit(int code)
     {
 #if DEBUG // Kept here to pause console for debugging purposes
-        _gitHubConsoleService.PauseConsole();
+        this.gitHubConsoleService.PauseConsole();
 #endif
         Environment.Exit(code);
     }
@@ -33,7 +33,7 @@ public class AppService : IAppService
     /// <inheritdoc/>
     public void ExitWithException(Exception exception)
     {
-        _gitHubConsoleService.WriteError(exception.Message);
+        this.gitHubConsoleService.WriteError(exception.Message);
         Exit(exception.HResult);
     }
 }

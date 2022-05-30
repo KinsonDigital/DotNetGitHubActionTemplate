@@ -5,7 +5,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace DotNetGitHubActionSampleTests.Helpers;
+namespace DotNetGitHubActionTemplateTests.Helpers;
 
 /// <summary>
 /// Loads test data for testing purposes.

@@ -3,17 +3,17 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 as build-env
 
 # Copy everything and publish the release (publish implicitly restores and builds)
 COPY . ./
-RUN dotnet publish ./NETGitHubActionSample/NETGitHubActionSample.csproj -c Release -o out --no-self-contained
+RUN dotnet publish ./DotNetGitHubActionTemplate/DotNetGitHubActionTemplate.csproj -c Release -o out --no-self-contained
 
 # Label the container
 LABEL maintainer="Calvin Wilkinson <kinsondigital@gmail.com>"
-LABEL repository="https://github.com/KinsonDigital/NETGitHubActionSample"
-LABEL homepage="https://github.com/KinsonDigital/NETGitHubActionSample"
+LABEL repository="https://github.com/KinsonDigital/DotNetGitHubActionTemplate"
+LABEL homepage="https://github.com/KinsonDigital/DotNetGitHubActionTemplate"
 
 # Label as GitHub action
-LABEL com.github.actions.name="NET GitHub Action Sample"
+LABEL com.github.actions.name="DotNet GitHub Action Template"
 
 # Relayer the .NET SDK, anew with the build output
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 COPY --from=build-env /out .
-ENTRYPOINT [ "dotnet", "/NETGitHubActionSample.dll" ]
+ENTRYPOINT [ "dotnet", "/DotNetGitHubActionTemplate.dll" ]

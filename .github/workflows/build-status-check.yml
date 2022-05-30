@@ -2,7 +2,7 @@ name: ✔Build Status Check
 
 
 env:
-  PROJECT_NAME: NETGitHubActionSample
+  PROJECT_NAME: DotNetGitHubActionTemplate
   NET_SDK_VERSION: 6.0.300
 
 

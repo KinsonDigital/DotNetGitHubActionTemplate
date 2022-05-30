@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using Moq;
 
-namespace DotNetGitHubActionSampleTests.Helpers;
+namespace DotNetGitHubActionTemplateTests.Helpers;
 
 /// <summary>
 /// Provides extensions to the <see cref="Moq"/> library for ease of use and readability purposes.

@@ -4,11 +4,11 @@
 
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
-using DotNetGitHubActionSample.Services;
+using DotNetGitHubActionTemplate.Services;
 
 [assembly: InternalsVisibleTo("DotNetGitHubActionTests", AllInternalsVisible = true)]
 
-namespace DotNetGitHubActionSample;
+namespace DotNetGitHubActionTemplate;
 
 /// <summary>
 /// The main application.
@@ -16,7 +16,7 @@ namespace DotNetGitHubActionSample;
 [ExcludeFromCodeCoverage]
 public static class Program
 {
-    private static IHost _host = null!;
+    private static IHost host = null!;
 
     /// <summary>
     /// The main entry point of the GitHub action.
@@ -25,7 +25,7 @@ public static class Program
     /// <returns>A <see cref="Task"/> representing the result of the asynchronous operation.</returns>
     public static async Task Main(string[] args)
     {
-        _host = Host.CreateDefaultBuilder(args)
+        host = Host.CreateDefaultBuilder(args)
             .ConfigureServices((_, services) =>
             {
                 services.AddSingleton<IAppService, AppService>();
@@ -39,8 +39,8 @@ public static class Program
 
         try
         {
-            appService = _host.Services.GetRequiredService<IAppService>();
-            gitHubAction = _host.Services.GetRequiredService<IGitHubAction>();
+            appService = host.Services.GetRequiredService<IAppService>();
+            gitHubAction = host.Services.GetRequiredService<IGitHubAction>();
         }
         catch (Exception e)
         {
@@ -64,12 +64,12 @@ public static class Program
                 inputs,
                 () =>
                 {
-                    _host.Dispose();
+                    host.Dispose();
                     appService.Exit(0);
                 },
                 (e) =>
                 {
-                    _host.Dispose();
+                    host.Dispose();
                     appService.ExitWithException(e);
                 }));
         }
@@ -88,8 +88,8 @@ public static class Program
     /// </exception>
     private static void ProcessInputErrors(IEnumerable<Error> errors)
     {
-        var appService = _host.Services.GetRequiredService<IAppService>();
-        var consoleService = _host.Services.GetRequiredService<IGitHubConsoleService>();
+        var appService = host.Services.GetRequiredService<IAppService>();
+        var consoleService = host.Services.GetRequiredService<IGitHubConsoleService>();
 
         foreach (var error in errors)
         {
@@ -115,7 +115,7 @@ public static class Program
         Console.ReadLine();
 #endif
 
-        _host.Dispose();
+        host.Dispose();
         appService.Exit(90);
     }
 }

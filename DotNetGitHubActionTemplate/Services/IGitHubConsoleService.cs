@@ -2,7 +2,7 @@
 // Copyright (c) KinsonDigital. All rights reserved.
 // </copyright>
 
-namespace DotNetGitHubActionSample.Services;
+namespace DotNetGitHubActionTemplate.Services;
 
 /// <summary>
 /// Provides helper methods for GitHub console related operations.

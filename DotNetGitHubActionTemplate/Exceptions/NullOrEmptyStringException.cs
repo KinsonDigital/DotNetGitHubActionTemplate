@@ -2,7 +2,7 @@
 // Copyright (c) KinsonDigital. All rights reserved.
 // </copyright>
 
-namespace DotNetGitHubActionSample.Exceptions;
+namespace DotNetGitHubActionTemplate.Exceptions;
 
 /// <summary>
 /// Occurs when a string is null or empty.

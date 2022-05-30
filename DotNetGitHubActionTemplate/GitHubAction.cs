@@ -2,15 +2,15 @@
 // Copyright (c) KinsonDigital. All rights reserved.
 // </copyright>
 
-using DotNetGitHubActionSample.Services;
+using DotNetGitHubActionTemplate.Services;
 
-namespace DotNetGitHubActionSample;
+namespace DotNetGitHubActionTemplate;
 
 /// <inheritdoc/>
 public class GitHubAction : IGitHubAction
 {
-    private readonly IGitHubConsoleService _gitHubConsoleService;
-    private readonly IActionOutputService _actionOutputService;
+    private readonly IGitHubConsoleService gitHubConsoleService;
+    private readonly IActionOutputService actionOutputService;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GitHubAction"/> class.
@@ -21,8 +21,8 @@ public class GitHubAction : IGitHubAction
         IGitHubConsoleService gitHubConsoleService,
         IActionOutputService actionOutputService)
     {
-        _gitHubConsoleService = gitHubConsoleService;
-        _actionOutputService = actionOutputService;
+        this.gitHubConsoleService = gitHubConsoleService;
+        this.actionOutputService = actionOutputService;
     }
 
     /// <inheritdoc/>
@@ -46,7 +46,7 @@ public class GitHubAction : IGitHubAction
     /// </summary>
     private void ShowWelcomeMessage()
     {
-        _gitHubConsoleService.WriteLine("Welcome!!");
-        _gitHubConsoleService.BlankLine();
+        this.gitHubConsoleService.WriteLine("Welcome!!");
+        this.gitHubConsoleService.BlankLine();
     }
 }
