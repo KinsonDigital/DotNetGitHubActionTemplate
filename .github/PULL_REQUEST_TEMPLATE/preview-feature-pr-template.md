@@ -46,6 +46,7 @@
 - [ ] My code follows the coding style of this project.
   - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out and let's discuss it.
 
+<!--TODO: Update this label reference-->
 - [ ] A https://github.com/KinsonDigital/DotNetGitHubActionTemplate/labels/preview label has been added to the pull request.
 
 - [ ] I have manually tested my code changes to the best of my ability.
