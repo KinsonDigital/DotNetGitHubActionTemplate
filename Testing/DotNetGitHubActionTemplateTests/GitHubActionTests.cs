@@ -6,6 +6,7 @@ using DotNetGitHubActionTemplate;
 using DotNetGitHubActionTemplate.Services;
 using Moq;
 
+// TODO: Rename this namespace
 namespace DotNetGitHubActionTemplateTests;
 
 public class GitHubActionTests

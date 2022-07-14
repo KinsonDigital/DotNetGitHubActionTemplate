@@ -1,10 +1,9 @@
 <h1 align="center">
 
-**Sample .NET Action**
+**DOTNET Action Template**<!--TODO: Update this-->
 </h1>
 
 <div align="center">
-<h3>Sample GitHub Action.</h3>
 
 <div hidden>TODO: ADD BADGES HERE</div>
 
@@ -13,14 +12,14 @@
 
 <div align="center">
 
+<!--
+    TODO: Update this and update link at the bottom that sends you back to here
+-->
 ## **What is it?**
 </div>
 
 
-This is a **GitHub Action** to make it easy to pull versions from XML files.
-This can be used in your workflows for other uses such as version validation, version tag management, and more!!
-
-
+<!--TODO: Add simple description-->
 
 <div align="center"><h3 style="font-weight:bold">Quick Example</h3></div>
 
@@ -50,7 +49,29 @@ TODO: Show action inputs in table
 
 | Input Name | Description | Required | Default Value |
 |---|:----|:---:|---|
-| `sample-input` | Just a sample!! | yes | N/A |
+| sample-input | Just a sample!! | yes | N/A |
+
+---
+
+<div align="center">
+
+## **Action Outputs**
+</div>
+
+TODO: Show action outputs in table
+
+<table align="center">
+    <tr>
+        <th>Output Name</th>
+        <th>Description</th>
+        <th>Values Returned</th>
+    </tr>
+    <tr align="center">
+        <td>valid-output</td>
+        <td align="left">Just a sample!! <span style="font-weight: bold">true</span> or <span style="font-weight: bold">false</span> indicating whether or not the branch is valid.</td>
+        <td><span style="font-weight: bold">true</span> or <span style="font-weight: bold">false</span></td>
+    </tr>
+</table>
 
 ---
 
@@ -81,6 +102,8 @@ TODO: Show examples if required
 <div align="left">
 
 ### License
+
+<!--TODO: Update this-->
 - [MIT License - DotNetGitHubActionTemplate]()
 </div>
 
@@ -91,10 +114,11 @@ TODO: Show examples if required
 
 TODO: Update these links
 
+<!--TODO: Update all of these links-->
 - [Calvin Wilkinson](https://github.com/CalvinWilkinson) (Owner and main contributor of the GitHub organization [KinsonDigital](https://github.com/KinsonDigital))
   - [NET GitHub Action Sample](https://github.com/KinsonDigital/DotNetGitHubActionTemplate) is used in various projects for this organization with great success.
 - Click [here](https://github.com/KinsonDigital/DotNetGitHubActionTemplate/issues/new/choose) to report any issues for this GitHub action!!
 
 <div align="right">
-<a href="#what-is-it">Back to the top!👆🏼</a>
+<a href="#what-is-it?">Back to the top!👆🏼</a>
 </div>
