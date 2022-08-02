@@ -16,7 +16,7 @@ namespace DotNetGitHubActionTemplateTests;
 /// </summary>
 public class ActionInputTests
 {
-    #region Prop Tests
+    #region Constructor Tests
     [Fact]
     public void Ctor_WhenConstructed_PropsHaveCorrectDefaultValuesAndDecoratedWithAttributes()
     {
