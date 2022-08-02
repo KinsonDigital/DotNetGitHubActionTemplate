@@ -13,6 +13,9 @@
 
     <!--Update this for production and preview releases-->
     <FileVersion>1.0.0-preview.9</FileVersion>
+
+    <!-- Ignore warning CS7035 about version syntax. -->
+    <NoWarn>7035</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
