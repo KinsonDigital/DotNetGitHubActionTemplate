@@ -1,24 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31019.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetGitHubActionTemplate", "DotNetGitHubActionTemplate\DotNetGitHubActionTemplate.csproj", "{6B7D8AB5-2EB6-4B9E-A219-44BAA2016BED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F6905A4-928D-4A81-9D9B-B273A27B3A92}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		action.yml = action.yml
 		Dockerfile = Dockerfile
 		LICENSE = LICENSE
 		README.md = README.md
-		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetGitHubActionTemplateTests", "Testing\DotNetGitHubActionTemplateTests\DotNetGitHubActionTemplateTests.csproj", "{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetGitHubActionTemplateTests", "Testing\DotNetGitHubActionTemplateTests\DotNetGitHubActionTemplateTests.csproj", "{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{3FB14118-6942-463A-9E6E-58EE7968075E}"
+	ProjectSection(SolutionItems) = preProject
+		Testing\.editorconfig = Testing\.editorconfig
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Issue Templates", "Issue Templates", "{330C0AE1-8934-470D-9652-F19BD167741A}"
 	ProjectSection(SolutionItems) = preProject
@@ -55,13 +58,13 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DD7716EC-6464-4FFB-837F-6E0390B1AC6A}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807} = {3FB14118-6942-463A-9E6E-58EE7968075E}
 		{330C0AE1-8934-470D-9652-F19BD167741A} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
 		{4A3DC25C-B4CE-4BE5-B3D7-D01AD6F7DB34} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
 		{E85C3CA0-3C6C-435B-8CE4-86D6B1D1931E} = {5F6905A4-928D-4A81-9D9B-B273A27B3A92}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD7716EC-6464-4FFB-837F-6E0390B1AC6A}
 	EndGlobalSection
 EndGlobal
