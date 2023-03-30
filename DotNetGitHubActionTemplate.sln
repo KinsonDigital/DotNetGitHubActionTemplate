@@ -12,8 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		action.yml = action.yml
 		Dockerfile = Dockerfile
-		LICENSE = LICENSE
 		README.md = README.md
+		LICENSE.md = LICENSE.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetGitHubActionTemplateTests", "Testing\DotNetGitHubActionTemplateTests\DotNetGitHubActionTemplateTests.csproj", "{A27A654A-52AA-4B2D-B9AF-75DAC9DF1807}"
